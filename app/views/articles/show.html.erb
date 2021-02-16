@@ -1,0 +1,6 @@
+<div class="head">
+  <h1> <%= @article.title %> </h1>
+  <p> <%= link_to "Edit this article", edit_article_path  %>  <%= link_to "Delete", article_path(@article), method: :delete, data: {confirm: "Are you shure?"}  %> </p>
+</div>
+<%= @article.content %>
+<p> <%= link_to "See all articles", articles_path  %> </p>
